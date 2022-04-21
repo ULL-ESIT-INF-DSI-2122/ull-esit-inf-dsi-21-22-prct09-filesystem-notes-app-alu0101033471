@@ -1,20 +1,10 @@
 {
-  "name": "ull-esit-inf-dsi-21-22-prct07-music-datamodel-grupo_l",
+  "name": "ull-esit-inf-dsi-21-22-prct09-filesystem-notes-app-alu0101033471",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "database": "tsc-watch --onSuccess \"node dist/clases/bdprueba.js\"",
-    "prueba3": "tsc-watch --onSuccess \"node dist/clases/inquirer-Album.js\"",
-    "prueba": "tsc-watch --onSuccess \"node dist/clases/inquirer.js\"",
-    "prueba2": "tsc-watch --onSuccess \"node dist/clases/inquirer-Grupos.js\"",
-    "prueba4": "tsc-watch --onSuccess \"node dist/clases/inquirer_artista.js\"",
-    "start": "tsc-watch --onSuccess \"node dist/index.js\"",
-    "cancion": "tsc-watch --onSuccess \"node dist/clases/cancion.js\"",
-    "genero": "tsc-watch --onSuccess \"node dist/clases/generosMusicales.js\"",
-    "album": "tsc-watch --onSuccess \"node dist/clases/album.js\"",
-    "artistas": "tsc-watch --onSuccess \"node dist/clases/artistas.js\"",
-    "grupos": "tsc-watch --onSuccess \"node dist/clases/grupos.js\"",
+    "prueba": "tsc-watch --onSuccess \"node dist/index.js\"",
     "test": "mocha",
     "doc": "typedoc",
     "coverage": "nyc npm test && nyc report --reporter=lcov"

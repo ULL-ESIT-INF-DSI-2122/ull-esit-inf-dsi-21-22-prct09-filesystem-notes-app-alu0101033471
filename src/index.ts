@@ -1,9 +1,9 @@
-import { Album } from "./clases/album";
-import { Artistas } from "./clases/artistas";
-import { Cancion } from "./clases/cancion";
-import { GenerosMusicales } from "./clases/generosMusicales";
-import { Grupos } from "./clases/grupos";
-import { Playlist } from "./clases/playlist";
+import { Album } from "./clases/clases-bases/album";
+import { Artistas } from "./clases/clases-bases/artistas";
+import { Cancion } from "./clases/clases-bases/cancion";
+import { GenerosMusicales } from "./clases/clases-bases/generosMusicales";
+import { Grupos } from "./clases/clases-bases/grupos";
+import { Playlist } from "./clases/clases-bases/playlist";
 
 //10 generos musicales
 export let Rock = new GenerosMusicales(`Rock`); //6
@@ -17,7 +17,7 @@ export let Flamenco = new GenerosMusicales(`Flamenco`); //6
 export let RyB = new GenerosMusicales(`RyB`); //8
 export let Soul = new GenerosMusicales(`Soul`); //7
 export let generos: GenerosMusicales[] = [Rock, Pop, Rap, Electronica, Regueton, Hip_Hop, Metal, Flamenco, RyB, Soul];
-// 50 canciones, aprox. 5 de cada genero
+
 export let cancion1 = new Cancion('Pulling Teeth', 'Alan Ryker',  '4:23', [Metal], false, 2100000);
 export let cancion2 = new Cancion('Thriller', 'Michael Jackson',  '5:58', [Pop], false, 825000000);  
 let cancion3 = new Cancion('Billie Jean', 'Michael Jackson',  '4:55', [Rock], false, 1154580120); 
@@ -212,8 +212,7 @@ artista39.construirArtista( [cancion39, cancion40, cancion41], 17644273);
 artista40.construirArtista( [cancion39, cancion40, cancion41], 17644273);
 artista41.construirArtista( [cancion39, cancion40, cancion41], 17644273);
 /*
-export let artistas: Artistas[] = [artista1, artista2, artista3, artista4, artista5, artista6, artista7, artista8, artista9, artista10, artista11, artista12, artista13, artista14, artista15, artista16, artista17, artista18, artista19, artista20, artista21, artista22, artista23, artista24, artista25, artista26, artista27, artista28, artista29, artista30, artista31, artista32, artista33, artista34, artista35, artista36, artista37, artista38, artista39, artista40, artista41];
-export let grupos: Grupos[] = [grupo1, grupo2, grupo3, grupo4, grupo5, grupo6];
+
 */
 // Playlists
 export let playlist1 = new Playlist(`Regueton a Full`, [cancion37, cancion38, cancion49, cancion32, cancion34, cancion33]);
@@ -224,19 +223,4 @@ let playlist5 = new Playlist(`De todo un poco`, [cancion19, cancion5, cancion3])
 let playlist6 = new Playlist(`Relax`, [cancion18, cancion23, cancion45]);
 let playlist7 = new Playlist(`Descansito`, [cancion19, cancion30, cancion3]);
 export let playlists: Playlist[] = [playlist1, playlist2, playlist3, playlist4, playlist5, playlist6, playlist7]
-/*
-export function CommandsGenerosCanciones(CommandsGenerosCanciones: any): import("inquirer").AsyncDynamicQuestionProperty<readonly import("inquirer").DistinctChoice<import("inquirer").ListChoiceMap<{ generoCancion: any; }>, import("inquirer").AllChoiceMap<import("inquirer").ListChoiceMap<{ generoCancion: any; }>>>[], { ...; }> | undefined {
-    throw new Error('Function not implemented.');
-}*/
-//console.log(playlist1.getGeneros());
-
-
-// Llamadas a métodos
-//console.log(cancion1.getGeneroMusical());
-//console.log(Pop.getGrupos());
-//console.log(Rock);
-//console.log(cancion1.getGeneroMusical());
-//console.log(cancion1);
-//console.log(artista1);
-//console.log(grupo1.dame());
 
