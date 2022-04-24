@@ -1,6 +1,11 @@
 {
     "entryPoints": [
-        "./src/ejercicio.ts"
+        "./src/index.ts",
+        "./src/add.ts",
+        "./src/list.ts",
+        "./src/remove.ts",
+        "./src/read.ts",
+        "./src/modify.ts"
     ],
     "out": "./docs"
 }
